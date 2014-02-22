@@ -13,13 +13,12 @@ class WeatherComponent implements Panel {
 
   String title = 'Weather';
   String url = "http://api.openweathermap.org/data/2.5/weather?q=";
-  String ort = "Bremen,de";
+  @NgAttr("ort")
+  set ort (String ort) { loadData(ort); }
   var data;
   
-  WeatherComponent() {
-    
-    //this.ort = ort;
-    loadData();
+  
+  WeatherComponent() {    
   }
   
   void setOrt(String inOrt) {
@@ -28,12 +27,12 @@ class WeatherComponent implements Panel {
   
   void update () => print("Loading method");
   
-  void loadData() {
+  void loadData(String ort) {
     // call the web server asynchronously
     
     //url = url + ort;
     //print("url" +url);
-    print(url + ort);
+    print("$url $ort");
     var request = HttpRequest.getString(url + ort).then(onDataLoaded);
   }
   

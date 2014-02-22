@@ -11,7 +11,6 @@ import 'package:angular/angular.dart';
   publishAs: 'main'
 )
 class MainController {
-  List<Panel> userPanels = [new WeatherComponent(), new WeatherComponent()];  
 }
 
 void main (){
