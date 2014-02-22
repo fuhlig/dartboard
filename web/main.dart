@@ -4,6 +4,7 @@
 import 'components/Panel.dart';
 import 'components/weather/WeatherComponent.dart';
 import 'components/news/NewsComponent.dart';
+import 'components/header/HeaderComponent.dart';
 import 'package:angular/angular.dart';
 
 @NgController(
@@ -18,5 +19,6 @@ void main (){
                         ..type(WeatherComponent)
                         ..type(NewsComponent)
                         ..type(MainController)
+                        ..type(HeaderComponent)
   );
 }
