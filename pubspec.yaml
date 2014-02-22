@@ -1,0 +1,5 @@
+name: Dartboard
+dependencies:
+  browser: any
+  angular: any
+  shadow_dom: any
