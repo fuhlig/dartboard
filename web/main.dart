@@ -10,9 +10,9 @@ import 'package:angular/angular.dart';
   publishAs: 'main'
 )
 class MainController {
-  List<Panel> userPanels = [new WeatherComponent(), new WeatherComponent()];
-
+  List<Panel> userPanels = [new WeatherComponent(), new WeatherComponent()];  
 }
+
 void main (){
   ngBootstrap(module: new Module()
                         ..type(WeatherComponent)
