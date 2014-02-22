@@ -3,6 +3,7 @@
 * */
 import 'components/Panel.dart';
 import 'components/weather/WeatherComponent.dart';
+import 'components/news/NewsComponent.dart';
 import 'package:angular/angular.dart';
 
 @NgController(
@@ -10,12 +11,13 @@ import 'package:angular/angular.dart';
   publishAs: 'main'
 )
 class MainController {
-  List<Panel> userPanels = [new WeatherComponent(), new WeatherComponent()];
+  List<Panel> userPanels = [new WeatherComponent(), new NewsComponent()];
 
 }
 void main (){
   ngBootstrap(module: new Module()
                         ..type(WeatherComponent)
+                        ..type(NewsComponent)
                         ..type(MainController)
   );
 }

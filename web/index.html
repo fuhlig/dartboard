@@ -13,15 +13,20 @@
   </head>
   <body>
 
-    <h1>DartBoard</h1>
-    <div main>
-        <ul class="medium-block-grid-2" ng-repeat="panel in main.userPanels">
-            <weather></weather>
+      <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1><a href="#">DartBoard</a></h1>
+              </li>
+            </ul>
+      </nav>
 
-        </ul>
-    </div>
-
-
+    <ul class="small-block-grid-2">
+        <li><weather></weather></li>
+        <li><news></news></li>
+        <li><weather></weather></li>
+        <li><weather></weather></li>
+    </ul>
 
 
     <script src="packages/shadow_dom/shadow_dom.min.js"></script>
