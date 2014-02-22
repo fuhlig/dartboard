@@ -1,3 +1,9 @@
-<h1>{{cmp.data.name}}<br/>
-Wetter: {{cmp.data.weather[0].main}}<br />
-Temp: {{cmp.data.main.temp - 273}}</h1>
+<ul class="pricing-table">
+  <li class="title">Wetter</li>
+  <li class="price">{{cmp.data.name}}</li>
+  <li class="description">{{cmp.data.weather[0].main}}</li>
+  <li class="bullet-item">{{cmp.data.main.temp - 273}}</li>
+  <li class="bullet-item">5GB Storage</li>
+  <li class="bullet-item">20 Users</li>
+  <li class="cta-button"><a class="button" href="#">Buy Now</a></li>
+</ul>
